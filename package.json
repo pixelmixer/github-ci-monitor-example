@@ -1,0 +1,34 @@
+{
+  "name": "github-ci-monitor",
+  "version": "1.0.0",
+  "description": "A github application to monitor CI build issues and add comments to the offending pull requests describing the reason for the build failure.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest src",
+    "start": "node init.js",
+    "lint": "eslint src/**",
+    "fix": "eslint src/** --fix",
+    "coverage": "jest --collectCoverageFrom=src/**.js --coverage src"
+  },
+  "keywords": [
+    "ci",
+    "monitor",
+    "pull",
+    "request",
+    "github",
+    "api"
+  ],
+  "author": "Dustin Sparks <pixelmixer@gmail.com> (https://djsparks.com)",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-jest": "^23.2.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "jest": "^23.2.0"
+  }
+}
