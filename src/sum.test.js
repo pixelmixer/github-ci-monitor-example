@@ -1,6 +1,6 @@
 import sum from './sum';
 
-test('Sum correctly adds two basic numbers', () => {
+etest('Sum correctly adds two basic numbers', () => {
   expect(sum(2, 2)).toBe(4);
 });
 
