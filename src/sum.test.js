@@ -18,5 +18,5 @@ test('Sum adds an arbitrary amount of numbers', () => {
 });
 
 test('Sums are calculated consistently', () => {
-  expect(sum(4, 5, 6, 7, 8)).toBeGreaterThan(sum(1, 2, 3, 4, 5));
+  expect(sum(4, 5, 6, 7, 8)).toBeGreaterThan(sum(100, 2, 3, 1, 5));
 });
