@@ -1,10 +1,8 @@
 import sum from './sum';
 
 test('Sum correctly adds two basic numbers', () => {
-  expect(sum(2, 2)).toBe(4);
+  expect(sum(2, 2)).toBe(5);
 });
-
-test('Sum adds 80 to 20 and results in 100', () => expect(sum(80, 20)));
 
 test('Sum adds an arbitrary amount of numbers', () => {
   const count = Math.random() * 1000;
@@ -19,12 +17,6 @@ test('Sum adds an arbitrary amount of numbers', () => {
   expect(sum(...arr)).toEqual(accum);
 });
 
-test('Two and two is two... right?', () => expect(2).toEqual(3));
-
 test('Sums are calculated consistently', () => {
-  expect(sum(4, 5, 6, 7, 8)).toBeGreaterThan(sum(1, 2, 3, 4, 5));
-});
-
-test('Sums are calculated inconsistently', () => {
-  expect(sum(4, 5, 6, 7, 8)).toBeGreaterThan(sum(100, 2, 3, 4, 5));
+  expect(sum(4, 5, 6, 7, 8)).toBeGreaterThan(sum(100, 2, 3, 1, 5));
 });
