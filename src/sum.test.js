@@ -1,7 +1,7 @@
 import sum from './sum';
 
 test('Sum correctly adds two basic numbers', () => {
-  expect(sum(2, 2)).toBe(4);
+  expect(sum(2, 2)).toBe(5);
 });
 
 test('Sum adds an arbitrary amount of numbers', () => {
